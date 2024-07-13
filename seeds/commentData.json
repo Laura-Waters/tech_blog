@@ -1,13 +1,13 @@
 [
   {
     "content": "Great post!",
-    "date": new Date(),
+    "date": "2024-07-13",
     "user_id": 1,
     "post_id": 1
   },
   {
     "content": "Interesting info!",
-    "date": new Date(),
+    "date": "2024-07-13",
     "user_id": 2,
     "post_id": 1
   }
