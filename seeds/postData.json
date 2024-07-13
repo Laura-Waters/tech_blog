@@ -1,0 +1,16 @@
+[
+  {
+    "title": "All About APIs",
+    "content": "This is a blog post about APIs.",
+    "date_created": new Date(),
+    "user_id": 1
+  },
+  {
+    "title": "Creating your file structure",
+    "content": "This post will teach you how to organize your files.",
+    "date_created": new Date(),
+    "user_id": 2
+  }
+]
+
+

@@ -1,0 +1,14 @@
+[
+  {
+    "content": "Great post!",
+    "date": new Date(),
+    "user_id": 1,
+    "post_id": 1
+  },
+  {
+    "content": "Interesting info!",
+    "date": new Date(),
+    "user_id": 2,
+    "post_id": 1
+  }
+]
