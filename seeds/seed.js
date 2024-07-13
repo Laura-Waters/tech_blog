@@ -22,12 +22,13 @@ const seedDatabase = async () => {
   
   const comments = await Promise.all(commentData.map(async (comment) => {
     const user = users.find((user) => user.id === comment.user_id);
-    const post = posts.find((post) => post.id === comment.post_id);
-    if (user && post) {
-      return await user.createComment(comment, { postId: post.id });
+    // const post = posts.find((post) => post.id === comment.post_id);
+    if (user) {
+      return await user.createComment(comment);
     }
   }));
-
+ 
 };
 
 seedDatabase();
+

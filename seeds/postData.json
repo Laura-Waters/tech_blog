@@ -1,14 +1,14 @@
 [
   {
-    "title": "All About APIs",
+    "header": "All About APIs",
     "content": "This is a blog post about APIs.",
-    "date_created": "05-22-24",
+    "date_created": "2024-05-22",
     "user_id": 1
   },
   {
-    "title": "Creating your file structure",
+    "header": "Creating your file structure",
     "content": "This post will teach you how to organize your files.",
-    "date_created": "04-26-24",
+    "date_created": "2024-04-26",
     "user_id": 2
   }
 ]

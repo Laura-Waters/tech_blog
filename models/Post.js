@@ -11,7 +11,7 @@ Post.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    header: {
       type: DataTypes.STRING,
       allowNull: false,
     },
