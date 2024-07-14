@@ -16,17 +16,21 @@ const seedDatabase = async () => {
   const posts = await Promise.all(postData.map(async (post) => {
     const user = users.find((user) => user.id === post.user_id);
     if (user) {
-      return await user.createPost(post);
+      return await Post.create;
+    } else {
+      console.log(`User not found for post with user_id: ${post.user_id}`);
     }
   }));
   
   const comments = await Promise.all(commentData.map(async (comment) => {
     const user = users.find((user) => user.id === comment.user_id);
-    // const post = posts.find((post) => post.id === comment.post_id);
-    if (user) {
-      return await user.createComment(comment);
+    const post = posts.find((post) => post.id === comment.post_id);
+    if (user && post) {
+      return await Comment.create;
     }
   }));
+
+  process.exit(0);
  
 };
 

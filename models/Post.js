@@ -13,7 +13,7 @@ Post.init(
     },
     header: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     content: {
       type: DataTypes.STRING,
