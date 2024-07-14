@@ -25,6 +25,7 @@ const sess = {
   }),
 };
 
+
 app.set('view engine', 'handlebars');
 
 app.use(session(sess));
@@ -35,11 +36,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
-sequelize.sync({ force: true }).then(() => {
-  console.log('Database synced');
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
-}).catch((err) => {
-  console.error('Error syncing database:', err);
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
 });
